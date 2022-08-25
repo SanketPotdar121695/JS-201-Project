@@ -1,0 +1,238 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Corben', cursive;
+    
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 96.9%;
+    margin: auto;
+   
+    background-color: #ffe01b;
+    padding: 0px 20px;
+    position: fixed;
+    top: 0px;
+}
+#main{
+    margin-top: 0px ;
+}
+#option{
+    display: flex;
+    gap: 20px;
+}
+#logo{
+    width: 200px;
+}
+#logo>img{
+    width: 100%;
+}
+#right_option{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#cont{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#worldmap{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#login{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 15px;
+    transition: 0.2s linear;
+    
+}
+#login1{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 15px;
+    transition: 0.2s linear;
+    margin-top: 25px;
+
+}
+#Signup1{
+    background-color: #007c89;
+    color: aliceblue;
+    border: none;
+    padding: 10px 15px ;
+    transition: 00.2s linear;
+}
+#login:hover{
+    background-color: rgb(230, 224, 224);
+}
+#Signup1:hover{
+    background-color: #0c5a63;
+}
+#container{
+    
+}
+
+#box1{
+    padding-top:60px ;
+    background-color: #ffe01b;
+   display: flex;
+    width: 85%;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 100px
+}
+#beardo_guy{
+    width: 100%;
+}
+#berdo_head{
+    font-size: 45px;
+    font-weight: 400;
+}
+#box1_0{
+    width: 50%;
+    text-align: left;
+    font-weight: 100;
+    padding: 20px;
+}
+#box1_0>p{
+    font-size: 25px;
+}
+#box2_0{
+    width: 50%;
+}
+#Signup2{
+    background-color: #007c89;
+    border: none;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 50px;
+}
+#box2{
+    text-align: center;
+    padding: 200px 0px;
+}
+#box2_header{
+    font-size: 50px;
+    font-style: 500;   
+}
+#box2_para{
+    font-size: 25px;
+    font-weight: 100;
+}
+#srcpic{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    text-align: center;
+}
+#box3{
+    text-align: center;
+    padding: 200px 0px;
+
+}
+#box3_head{
+    font-size: 50px;
+    font-style: 500; 
+}
+#box4{
+    text-align:  center;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    align-items: center;
+    padding: 20px ;
+   
+}
+.grid_img{
+    width: 100%;
+}
+#tag{
+    text-align: center;
+    padding: 200px 0px;
+
+}
+#tag_head{
+    font-size: 50px;
+    font-style: 500; 
+}
+#tagbtn{
+    background-color: #007c89;
+    border: none;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 20px;
+}
+#box5{
+    text-align: center;
+    padding: 200px 0px;
+    padding-bottom: 0px;
+    background-color: white;
+}
+#tag2_head{
+    font-size: 50px;
+    font-style: 500; 
+    line-height:52px;
+    
+}
+
+ 
+#picart{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+    gap: 45px;
+    
+    width: 80%;
+    margin: auto;
+    align-items: center;
+
+}
+.pic_art_img{
+    width: 100%;
+    padding-top: 120px;
+
+
+}
+#main2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+   
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+
+}
+#main2>div{
+   
+    padding: 0px 0px 0px 90px;
+}
+
+#box6{
+    text-align:  center;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    align-items: center;
+    padding: 20px ;
+
+}
+#grl_pic{
+    width: 100%;
+    padding-top: 120px;
+}
+
+
