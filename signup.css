@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+h1 {
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35.2px;
+    color: rgb(36, 28, 21);
+    font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+}
+.common-font, form > label {
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+h1 + p {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(36, 28, 21);
+}
+a {
+    text-decoration: none;
+    color: #007c89;
+}
+h1 + p a:hover {
+    cursor: pointer;
+}
+#container {
+    height: 100%;
+    position: relative;
+    border-left: 8px solid #ffe01b;
+}
+#container > div {
+    width: 38%;
+    margin-left: 15.8vw;
+    margin-top: -5px;
+}
+form {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+form > label:first-child {
+    margin-top: 0;
+}
+form > label {
+    margin: 24px 0px 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(36, 28, 21);
+}
+form > input {
+    padding: 13px 20px;
+    border: 1px solid rgba(120, 120, 120, 0.65);
+    transition: 0.4s;
+}
+form > input:focus {
+    outline: none;
+    border: 2px solid #007c89;
+}
+form > input:last-child {
+    border: 0;
+    width: 26%;
+    color: white;
+    transition: 0.2s;
+    margin-top: 25px;
+    padding: 15px 0px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #007c89;
+}
+form > input:last-child:hover {
+    cursor: pointer;
+    background-color: #006874;
+}
+#checkbox {
+    display: flex;
+    gap: 10px;
+    margin: 24px auto 18px -5px;
+}
+#checkbox > input {
+    appearance: none;
+    width: 8%;
+    height: 24px;
+    margin-top: 15px;
+    font-size: 1.6rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(120, 120, 120, 0.65);
+}
+#checkbox > input::after {
+    font-weight: 900;
+    font-size: 15px;
+    color: white;
+    display: none;
+    content: "\f00c";
+    font-family: "Font Awesome 6 free";
+}
+#checkbox > input:hover {
+    cursor: pointer;
+}
+#checkbox > input:checked {
+    background-color: #017c89;
+    border: 3px solid #004c7b90;
+}
+#checkbox > input:checked:after {
+    display: block;
+}
+#checkbox > label, #checkbox + p {
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: rgb(36, 28, 21);
+}
+#checkbox + p {
+    margin: 0;
+    padding: 0;
+}
+#checkbox + p > a, form + p > a {
+    border-bottom: 1px solid;
+}
+#logo {
+    width: 2.4%;
+    padding: 12px;
+}
+#bg-image {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 57.5vw; right: 0;
+    background-color: #ffe01b;
+}
+#bg-image > img {
+    margin-left: -68px;
+    margin-top: 78px;
+}
+form + p, footer {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 25px;
+    line-height: 18px;
+    color: rgba(36, 28, 21, 0.65);
+}
+footer {
+    margin-top: 10vh;
+    padding-left: 15px;
+    padding-bottom: 1px;
+}
+footer > p {
+    margin-top: -10px;
+}
+footer > p > a {
+    border-bottom: 1px solid;
+    color: rgba(36, 28, 21, 0.65);
+}
+.flex {
+    display: flex;
+    margin: 25px 0px 10px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(36, 28, 21);
+}
+.flex > span {
+    color: #007c89;
+    display: inline-flex;
+    position: absolute;
+    width: 5%;
+    top: 45.5vh;
+    left: 49vw; right: 0;
+}
+.flex > span > i:hover {
+    cursor: pointer;
+}
+.flex > span > i > p {
+    display: inline;
+    font-weight: 600;
+    line-height: 18px;
+}
+#hide2,
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+@media all and (max-width: 1024px) {
+    #logo {
+        width: 3%;
+        padding: 10px;
+    }
+    form > input {
+        padding: 8px 20px;
+    }
+    form > label {
+        font-size: 11px;
+        margin: 14px 0px 4px;
+    }
+    #bg-image {
+        display: none;
+    }
+    #container > div {
+        width: 47%;
+    }
+    #container {
+        position: absolute;
+        border-left: 6px solid #ffe01b;
+    }
+    h1 {
+        font-size: 22px;
+        margin-bottom: -5px;
+    }
+    h1 + p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    form > input:last-child {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 5px;
+        padding: 10px 0px;
+    }
+    #checkbox > input {
+        height: 18px;
+        margin-top: 0px;
+    }
+    #checkbox > label, #checkbox + p {
+        font-size: 9px;
+        padding: 10px 0;
+        margin-top: -8px;
+        line-height: 16px;
+    }
+    .flex {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .flex > span {
+        top: 38vh;
+        left: 50.5vw;
+        width: 6%;
+    }
+    .flex > label {
+        font-size: 11px;
+    }
+    .flex > span > i {
+        font-size: 11px;
+    }
+    #checkbox + p {
+        margin-top: -18px;
+    }
+    form + p, footer {
+        font-size: 8px;
+    }
+    form + p {
+        margin-top: 15px;
+    }
+}
+@media all and (max-width: 640px) {
+    #container {
+        border-left: 0;
+        position: absolute;
+        border-top: 6px solid #ffe01b;
+    }
+}
+@media all and (max-width: 600px) {
+    #checkbox > input {
+        width: 20%;
+    }
+}

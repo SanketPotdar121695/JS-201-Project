@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Mailchimp</title>
+    <link rel="icon" href="https://i.postimg.cc/LsWsgPRQ/mailchimp-sq.jpg">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+</head>
+<body>
+    <div id="container">
+        <img id="logo" src="https://i.postimg.cc/gjh2tbKs/mailchimp-icon.png" alt="Mailchimp">
+        <div>
+            <h1>Sign up for Mailchimp</h1>
+            <p class="common-font"><span>Create a free account or <a href="">log in</a></span></p>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"/>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username"/>
+                <div class="flex common-font">
+                    <label for="password">Password</label>
+                    <span onclick="myFunction()"><i id="hide1" class="fa-solid fa-eye"> <p class="common-font">Show</p></i><i id="hide2" class="fa-solid fa-eye-slash"> <p class="common-font">Hide</p></i></span>
+                </div>
+                <input type="password" name="password" id="password"/>
+                <div id="checkbox">
+                    <input type="checkbox" name="checkbox"/>
+                    <label class="common-font" for="checkbox">I don't want to receive emails about Mailchimp and related Intuit product and feature updates, marketing best practices, and promotions from Mailchimp.</label>
+                </div>
+                <p class="common-font">By creating an account, you agree to our <a href="">Terms</a> and have read and acknowledge the <a href="">Global Privacy Statement</a>.</p>
+                <input class="common-font" type="submit" value="Sign Up"/>
+            </form>
+            <p class="common-font">Invisible reCAPTCHA by Google <a href="">Privacy Policy</a> and <a href="">Terms of Use</a>.</p>
+        </div>
+        <div id="bg-image">
+            <img src="https://i.postimg.cc/jjHNZ5T8/art-hero-flowers.png" alt="">
+        </div>
+        <footer class="common-font">
+            <p>©2001–2022 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group, LLC.</p>
+            <p><a href="">Cookie Preferences</a>, <a href="">Privacy</a>, and <a href="">Terms</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
+<script src="signup.js"></script>
