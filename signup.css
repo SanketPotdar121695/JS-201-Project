@@ -12,13 +12,15 @@ h1 {
     color: rgb(36, 28, 21);
     font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
 }
+.common-font, form > label {
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
 h1 + p {
     margin: 0;
     margin-bottom: 24px;
     font-weight: 400;
     line-height: 24px;
     color: rgb(36, 28, 21);
-    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 }
 a {
     text-decoration: none;
@@ -50,7 +52,6 @@ form > label {
     font-weight: 600;
     line-height: 18px;
     color: rgb(36, 28, 21);
-    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 }
 form > input {
     padding: 13px 20px;
@@ -72,7 +73,6 @@ form > input:last-child {
     font-size: 16px;
     font-weight: 500;
     background-color: #007c89;
-    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 }
 form > input:last-child:hover {
     cursor: pointer;
@@ -81,13 +81,11 @@ form > input:last-child:hover {
 #checkbox {
     display: flex;
     gap: 10px;
-    margin-top: 24px;
-    margin-bottom: 18px;
-    margin-left: -5px;
+    margin: 24px auto 18px -5px;
 }
 #checkbox > input {
     appearance: none;
-    width: 43px;
+    width: 8%;
     height: 24px;
     margin-top: 15px;
     font-size: 1.6rem;
@@ -98,12 +96,12 @@ form > input:last-child:hover {
     border: 1px solid rgba(120, 120, 120, 0.65);
 }
 #checkbox > input::after {
-    font-family: "Font Awesome 6 free";
     font-weight: 900;
     font-size: 15px;
     color: white;
     display: none;
     content: "\f00c";
+    font-family: "Font Awesome 6 free";
 }
 #checkbox > input:hover {
     cursor: pointer;
@@ -122,7 +120,6 @@ form > input:last-child:hover {
     line-height: 21px;
     letter-spacing: 0.5px;
     color: rgb(36, 28, 21);
-    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 }
 #checkbox + p {
     margin: 0;
@@ -146,17 +143,16 @@ form > input:last-child:hover {
     margin-top: 78px;
 }
 form + p, footer {
-    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 18px;
     margin-top: 25px;
+    line-height: 18px;
     color: rgba(36, 28, 21, 0.65);
 }
 footer {
     margin-top: 10vh;
-    padding-bottom: 1px;
     padding-left: 15px;
+    padding-bottom: 1px;
 }
 footer > p {
     margin-top: -10px;
@@ -164,4 +160,118 @@ footer > p {
 footer > p > a {
     border-bottom: 1px solid;
     color: rgba(36, 28, 21, 0.65);
+}
+.flex {
+    display: flex;
+    margin: 25px 0px 10px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(36, 28, 21);
+}
+.flex > span {
+    color: #007c89;
+    display: inline-flex;
+    position: absolute;
+    width: 5%;
+    top: 45.5vh;
+    left: 49vw; right: 0;
+}
+.flex > span > i:hover {
+    cursor: pointer;
+}
+.flex > span > i > p {
+    display: inline;
+    font-weight: 600;
+    line-height: 18px;
+}
+#hide2,
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+@media all and (max-width: 1024px) {
+    #logo {
+        width: 3%;
+        padding: 10px;
+    }
+    form > input {
+        padding: 8px 20px;
+    }
+    form > label {
+        font-size: 11px;
+        margin: 14px 0px 4px;
+    }
+    #bg-image {
+        display: none;
+    }
+    #container > div {
+        width: 47%;
+    }
+    #container {
+        position: absolute;
+        border-left: 6px solid #ffe01b;
+    }
+    h1 {
+        font-size: 22px;
+        margin-bottom: -5px;
+    }
+    h1 + p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    form > input:last-child {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 5px;
+        padding: 10px 0px;
+    }
+    #checkbox > input {
+        height: 18px;
+        margin-top: 0px;
+    }
+    #checkbox > label, #checkbox + p {
+        font-size: 9px;
+        padding: 10px 0;
+        margin-top: -8px;
+        line-height: 16px;
+    }
+    .flex {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .flex > span {
+        top: 38vh;
+        left: 50.5vw;
+        width: 6%;
+    }
+    .flex > label {
+        font-size: 11px;
+    }
+    .flex > span > i {
+        font-size: 11px;
+    }
+    #checkbox + p {
+        margin-top: -18px;
+    }
+    form + p, footer {
+        font-size: 8px;
+    }
+    form + p {
+        margin-top: 15px;
+    }
+}
+@media all and (max-width: 640px) {
+    #container {
+        border-left: 0;
+        position: absolute;
+        border-top: 6px solid #ffe01b;
+    }
+}
+@media all and (max-width: 600px) {
+    #checkbox > input {
+        width: 20%;
+    }
 }
