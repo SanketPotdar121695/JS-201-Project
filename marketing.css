@@ -6,6 +6,14 @@
     justify-content: center;
     align-items: center;
     gap:5px;
+    padding-top: 110px;
+}
+#how{
+   font-family:"Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+font-size: 22px;
+font-weight: 400;
+line-height: 24.3px;
+color: rgb(0, 0, 0);
 }
 h1{
 font-family:"Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
@@ -13,6 +21,28 @@ font-size: 22px;
 font-weight: 400;
 line-height: 24.3px;
 color: rgb(0, 0, 0);
+
+}
+@keyframes float{
+   from{
+      transform: rotate(5deg);
+   }
+   to{
+      transform: rotate(-5deg);
+   }
+}
+a{
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+
+}
+body{
+   background-color: #ffff;
+}
+.websites{
+   text-transform: uppercase;
+   text-shadow:0 1px  yellow,0 2px 0 yellow,0 3px yellow, 0 4px 0 yellow;
+   animation: float 3s linear infinite alternate
 }
 #rs{
    display: grid;
@@ -43,7 +73,7 @@ color: rgb(0, 0, 0);
     
 }
 #box1{
-   background-color:#DADDDD;
+
    padding-left: 104px;
    padding-right: 0px;
    margin: auto;
@@ -72,6 +102,7 @@ h2{
    line-height: 39px;
    color: rgb(36, 28, 21);
    margin-left: 30px;
+   padding-top: 20px;
 }
 p{
    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
@@ -91,7 +122,34 @@ color: rgb(64, 59, 59);
 margin-left: 30px;
 margin-top: 11px;
 }
-#money{
+#money1{
+   font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+Font-size: 50.8276px;
+Font-weight: 400;
+Line-height: 35.5793px;
+color: rgb(36, 28, 21);
+margin-top: -45px;
+margin-left: 40px;
+}
+#money2{
+   font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+Font-size: 50.8276px;
+Font-weight: 400;
+Line-height: 35.5793px;
+color: rgb(36, 28, 21);
+margin-top: -45px;
+margin-left: 40px;
+}
+#money3{
+   font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+Font-size: 50.8276px;
+Font-weight: 400;
+Line-height: 35.5793px;
+color: rgb(36, 28, 21);
+margin-top: -45px;
+margin-left: 40px;
+}
+#money4{
    font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
 Font-size: 50.8276px;
 Font-weight: 400;
@@ -103,15 +161,20 @@ margin-left: 40px;
 #check{
    color: rgb(4, 106, 146);
    font-size: 20px;
+   margin-right: 10px;
 }
 .month{
    margin-top: -70px;
    margin-left: 40px;
    font-size: 16px;
 }
+body{
+  margin:0px;
+  padding: 0px;
+}
 .buy{
    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
-Font-size: 14px;
+Font-size: 16px;
 Font-weight: 600;
 Line-height: 18.9px;
 color: rgb(255, 255, 255);
@@ -224,6 +287,7 @@ margin-left: 30px;
    Font-weight: 600;   
    Line-height: 20.25px;   
    color:  #164a4a;
+   margin-top: 20px;
 }
 #more2{
    width:180px;
@@ -328,6 +392,7 @@ img{
    background-color: #DADDDD;
    border-bottom: 1px solid grey;
 }
+
 #p1{
    font-size: 18px;
    font-weight: bold;
@@ -336,6 +401,9 @@ img{
 }
 p{
    margin-top: 40px;
+}
+button:hover{
+     background-color: green;
 }
 #box5{
    display: grid;
@@ -367,4 +435,79 @@ p{
    width:85%;
    height: 40px;
    margin-top: 45px;
+}
+
+
+
+#nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   width: 99%;
+   margin: auto;
+  
+   background-color: #ffe01b;
+   padding: 0px 20px;
+   position: fixed;
+   top: 0px;
+   
+}
+#main{
+   margin-top: 0px ;
+}
+#option{
+   display: flex;
+   gap: 20px;
+   font-size: 20px;
+}
+#logo{
+   width: 200px;
+}
+#logo>img{
+   width: 100%;
+}
+#right_option{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+#cont{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+#worldmap{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+#login{
+   background-color: transparent;
+   border: 1px solid black;
+   padding: 10px 15px;
+   transition: 0.2s linear;
+   
+}
+#login1{
+   background-color: transparent;
+   border: 1px solid black;
+   padding: 10px 15px;
+   transition: 0.2s linear;
+   margin-top: 25px;
+
+}
+#Signup1{
+   background-color: #007c89;
+   color: aliceblue;
+   border: none;
+   padding: 10px 15px ;
+   transition: 00.2s linear;
+   
+}
+#login:hover{
+   background-color: rgb(230, 224, 224);
+}
+#Signup1:hover{
+   background-color: #0c5a63;
 }
