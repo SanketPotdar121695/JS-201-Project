@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Account SetUp</h1>
+    <hr>
+    
+    <div id="container">
+        <div><h3>Payment method</h3></div>
+        <div>
+            <h4>Credit Card</h4>
+            <h3>Card Number</h3>
+            <input id="num" type="text" placeholder="1111 2222 3333 4444">
+            <h3>Expires</h3>
+            <input id="expire" type="date">
+            <h3>CVV</h3>
+            <input id="cvv" type="text" placeholder="123"><br>
+            <button onclick="submitDetails()">Save</button>
+        </div>
+        <div>
+            <h2>Purchase Summary<br>Billed in Indian Rupee</h2>
+            <h4>Premium plan - ₹24,013.11 / month</h4>
+            <p class="p3">10,000 contacts*</p>
+            <p class="p3">150,000 email sends*</p>
+            <h4>Tax-₹4,322.36</h4>
+            <h2 id="hap">+</h2>
+            <h4 id="show"></h4>
+            <hr style="width:100px;margin-left: 10px;margin-top: -35px;">
+            <h4 id="sad"></h4>
+            <button id="no">Pay</button>
+        </div>
+    </div>
+    <div id="container2">
+        <div>
+            <h3>Contact address</h3>
+        </div>
+        <div>
+            <h3>First Name</h3>
+            <input id="first" type="text" placeholder="">
+            <h3>Last Name</h3>
+            <input id="last" type="text">
+            <h3>Address</h3>
+            <input id="add" type="text"><br>
+            <button onclick="submitContact()">Save</button>
+        </div>
+        <div>
+           <p>By selecting “Pay Now”, I understand that I am enrolling in a subscription plan and I authorize Mailchimp to charge my payment method each month at the then-current list price (plus applicable taxes) unless I cancel. I can cancel anytime by going to my Billing page in the Account Settings.
+
+            *When you exceed your limit, you incur additional charges of ₹3,614.01/mo per additional 1,000 contacts (comes with additional 15,000 email sends).
+            Learn More</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+   let total=0
+   
+    let show=document.getElementById("show")
+    let sad=document.getElementById("sad")
+    
+    function submitDetails(){
+        
+         alert("Card Details Saved Sucessfully")
+        
+    }
+    function submitContact(){
+    
+       
+            alert("Contact Details Saved Sucessfully")
+        }
+    
+    function showprice(){
+        let p=(localStorage.getItem("buy"))  
+        //let p=+price.price
+        show.innerText=p
+        console.log(p)
+         total=4322.36+(+p)
+        console.log(total)
+        sad.innerText=total
+        
+    }
+    showprice()
+   
+</script>
