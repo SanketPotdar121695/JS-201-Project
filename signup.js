@@ -1,4 +1,4 @@
-function myFunction(){
+const myFunction = () => {
     let x = document.getElementById("password");
     let y = document.getElementById("hide1");
     let z = document.getElementById("hide2");
@@ -16,9 +16,8 @@ function myFunction(){
 }
 
 let form = document.querySelector ("form");
-form.addEventListener("submit", signUp);
 
-function signUp(event) {
+const signUp = (event) => {
     event.preventDefault();
     let user_data = JSON.parse(localStorage.getItem("user-data")) || [];
 
@@ -33,7 +32,7 @@ function signUp(event) {
         alert("Please fill all the credentials!");
         return;
     }
-
+    
     let isExisted = false;
     for (let i = 0; i < user_data.length; i++){
         if (email === user_data.email || username === user_data[i].username){
@@ -48,5 +47,8 @@ function signUp(event) {
     else {
         user_data.push (user);
         localStorage.setItem ("user-data", JSON.stringify(user_data));
+        alert("User signed up successfully!");
+        window.location.reload();
     }
 }
+form.addEventListener("submit", signUp);
