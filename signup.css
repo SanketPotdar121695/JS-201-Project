@@ -125,7 +125,7 @@ form > input:last-child:hover {
     margin: 0;
     padding: 0;
 }
-#checkbox + p > a, form + p > a {
+form + p > a {
     border-bottom: 1px solid;
 }
 #logo {
