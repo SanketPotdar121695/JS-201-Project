@@ -517,13 +517,13 @@ a {
 }
 
 #J>div {
-    width: 60%;
+    width: 70%;
     margin: auto;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 
-#J>div>h2{
+#J>div>h2 {
     font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
     font-size: 34px;
     font-weight: 300;
@@ -533,7 +533,7 @@ a {
 }
 
 
-#J>div>p {
+.badu {
     font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
     font-size: 23px;
     font-weight: 300;
@@ -542,8 +542,146 @@ a {
     padding-bottom: 26px;
 }
 
-#J>div>p:hover{
+.badu:hover {
     color: #2e8891;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.chotu {
+    display: none;
+    padding-left: 40px;
+
+}
+
+.chotu {
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(64, 59, 59);
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.badu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.expand_img {
+    width: 30px;
+}
+
+#K {
+    background-color: #FFE01B;
+}
+
+#secK {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+
+}
+
+#secK>p:nth-child(1) {
+    font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+    font-size: 74px;
+    font-weight: 300;
+    line-height: 74px;
+    color: rgb(36, 28, 21);
+    padding-bottom: 7vh;
+}
+
+#secK>p:nth-child(2) {
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    Line-height: 33.6px;
+    color: rgb(36, 28, 21);
+    width: 65%;
+    margin: auto;
+    padding-bottom: 5vh;
+}
+
+#secK>button {
+    width: 160px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #007c89;
+    color: white;
+    border: none;
+}
+
+#secK>button>a {
+    color: white;
+}
+
+#L{
+    padding-bottom: 15vh;
+}
+
+#secL {
+    width: 70%;
+    margin: auto;
+}
+
+#secL>h1 {
+    font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 35.2px;
+    color: rgb(36, 28, 21);
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+#container>div>img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#container>div>p:nth-child(2) {
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    color: rgb(36, 28, 21);
+    padding-bottom: 10px;
+
+}
+
+#container>div>p:nth-child(3) {
+    font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 31.2px;
+    color: rgb(0, 78, 86);
+    padding-bottom: 10px;
+}
+
+#container>div>p:nth-child(4) {
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(64, 59, 59);
+    padding-bottom: 10px;
+}
+
+.changeWindow{
+    cursor: pointer;
+}
+.changeWindow1{
     cursor: pointer;
 }
