@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/LsWsgPRQ/mailchimp-sq.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="stylesheet" href="login.css"/>
+    <title>Login | Mailchimp</title>
+</head>
+<body>
+    <div id="container">
+        <img id="logo" src="https://i.postimg.cc/gjh2tbKs/mailchimp-icon.png" alt="Mailchimp">
+        <div>
+            <h1>Log In</h1>
+            <p class="common-font"><span>Need a Mailchimp account? <a href="/signup.html">Create an account</a></span></p>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username"/>
+                <div class="flex common-font">
+                    <label for="password">Password</label>
+                    <span onclick="myFunction()"><i id="hide1" class="fa-solid fa-eye"> <p class="common-font">Show</p></i><i id="hide2" class="fa-solid fa-eye-slash"> <p class="common-font">Hide</p></i></span>
+                </div>
+                <input type="password" name="password" id="password"/>
+                <input type="submit" value="Log In">
+            </form>
+            <div id="checkbox">
+                <input type="checkbox" name="checkbox"/>
+                <label class="common-font" for="checkbox">Keep me logged in</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="login.js"></script>
