@@ -5,18 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="marketing.css">
     <title>Document</title>
 </head>
 <body>
+    
+    <! -- Navbar -->
+
+    <div id="main">
+        <div id="nav">
+            <div id="option">
+                <a href="Products.html">Products</a>
+                <a href="Resources.html">Resources</a>
+                <a href="Inspirationhtml">Inspiration</a>
+                <a href="Pricing.html">Pricing</a>
+            </div>
+            
+        <div id="logo">
+            <img src="https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/300063249_4967307623369583_8858962477587924034_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=5AjsqAZWnT4AX8zFu5D&_nc_ht=scontent.fixr3-2.fna&oh=00_AT_uUhDhyHN58OWWQHIzv5-s72-eITAZE751u_V6rWHVyg&oe=630AD1A4" alt="logo"/>
+        </div>
+
+        <div id="right_option">
+
+            <div id="cont">
+                <a href="sales.html">Sales:</a>
+                <a href="sales.html">+1(800) 315-5939</a>
+            </div>
+
+            <div id="worldmap">
+                <div id="wldmp">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                 <div id="srch">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div> 
+                  <button type="button" id="login">Log In </button>
+                  <button type="button" id="Signup1">Sign Up Free </button>
+            </div>
+               
+        </div>
+       
+        </div>
+
+
+        
+</div>
+    
     <div id="navbar">
-         <h1>Marketing Platform</h1>
-         <h1>Websites & Commerce</h1>
-         <h1>Transactional Email</h1>
+        <h1 class="websites"><a href="marketing.html">Marketing Platform</a></h1>
+        <h1 class="websites"><a href="websites.html">Websites & Commerce</a></h1>
+         <h1 class="websites"><a href="email.html">Transactional Email</a></h1>
     </div>
     <div id="rs">
         
-           <div id="box1"><h1>How many contacts do you have?</h1></div>
+           <div id="box1"><h1 id="how">How many contacts do you have?</h1></div>
            <div>
             <select name="" id="select">
                 <option value="">500</option>
@@ -37,19 +79,20 @@
     <div id="container">
        <div>
         <h2>Premium</h2>
-        <p>Advanced features for pros who need more customization.</p>
+        <p>Advanced features for pros who need more customization businesses that want to grow faster.</p>
         <h6>Starts at</h6>
         <h6 class="start">₹</h6>
-        <h5 id="money"> 23,000</h5>
+        <h5 id="money1">23,000</h5>
         <h6 class="month">/month*</h6>
-        <button class="buy">Buy Now</button>
-        <h6>*Overages apply if contact or email send limit is exceeded.</h6>
+        <button class="buy" onclick="buyNow1()">Buy Now</button>
+        <h6>*Overages apply if contact or email send limit is exceeded .</h6>
         <h4 class="head">Everything in Standard, plus:</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Advanced Segmentation</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Multivariate Testing</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Comparative Reporting</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Unlimited Seats & Role-Based Access</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Phone & Priority Support</h4>
+        
         <h3 class="about">About Premium</h3>
         <div class="email">
             <p class="last">Monthly email sends: 15x plan’s contact limit.</p>
@@ -61,9 +104,9 @@
         <p>Data-driven automation and optimization tools for businesses that want to grow faster.</p>
         <h6>Starts at</h6>
         <h6 class="start">₹</h6>
-        <h5 id="money">1,500</h5>
+        <h5 id="money2">1,500</h5>
         <h6 class="month">/month*</h6>
-        <button class="buy">Buy Now</button>
+        <button class="buy" onclick="buyNow2()">Buy Now</button>
         <h6>*Overages apply if contact or email send limit is exceeded.</h6>
         <h4 class="head">Everything in Essentials, plus:</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Customer Journey Builder + Branching Points</h4>
@@ -81,9 +124,9 @@
         <p>Great for email-only senders who want around-the-clock support.</p>
         <h6>Starts at</h6>
         <h6 class="start">₹</h6>
-        <h5 id="money"> 7,700</h5>
+        <h5 id="money3">7,700</h5>
         <h6 class="month">/month*</h6>
-        <button class="buy">Buy Now</button>
+        <button class="buy" onclick="buyNow3()">Buy Now</button>
         <h6>*Overages apply if contact or email send limit is exceeded.</h6>
         <h4 class="head">Everything in Free, plus:</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Email & Landing Page Templates</h4>
@@ -101,9 +144,9 @@
         <p>All the multi-channel tools you need to build your business and grow your audience.</p>
         <h6>Starts at</h6>
         <h6 class="start">₹</h6>
-        <h5 id="money">O</h5>
+        <h5 id="money4">O</h5>
         <h6 class="month">/month*</h6>
-        <button class="buy">Buy Now</button>
+        <button class="buy" onclick="buyNow4()">Buy Now</button>
         <h6>*Overages apply if contact or email send limit is exceeded.</h6>
         <h4 class="head">Everything you get with Free</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Marketing CRM</h4>
@@ -225,3 +268,22 @@
     </div>
 </body>
 </html>
+<script>
+  
+    function buyNow1(){
+       localStorage.setItem("buy",23000)
+       window.location.href="checkout.html"
+    }
+    function buyNow2(){
+       localStorage.setItem("buy",1500)
+       window.location.href="checkout.html"
+    }
+    function buyNow3(){
+       localStorage.setItem("buy",7700)
+       window.location.href="checkout.html"
+    }
+    function buyNow4(){
+       localStorage.setItem("buy",0)
+       window.location.href="checkout.html"
+    }
+</script>
