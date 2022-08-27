@@ -14,11 +14,13 @@ body{
     height: 70px;
     width: 96.9%;
     margin: auto;
-   
     background-color: #ffe01b;
     padding: 0px 20px;
     position: fixed;
     top: 0px;
+}
+#cont a{
+    color: black;
 }
 #main{
     margin-top: 0px ;
@@ -28,7 +30,84 @@ body{
     gap: 20px;
     
 }
-#option a,#footer_grid a{
+#nav:hover{
+    background-color: #fff;
+    
+}
+
+.otp{
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.5s ease-in;
+}
+.pri>a:hover{
+    color:purple;
+    text-decoration: underline;
+
+}
+.otp:hover{
+    color:purple;
+    text-decoration: underline;
+
+}
+#slider{  
+    display:none ;
+    border: none;  
+    width: 30%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+     text-align: left;
+     overflow-y: scroll;
+     padding: 70px;
+    margin-top: 4rem;
+    height: 700px;
+    background-color: rgb(252, 252, 252);
+}
+#menu_products ul {
+    /*text-decoration: none;*/
+    padding-top: 100px;
+    list-style-type: none;
+}
+#menu_products ul li {
+   width: 100%;
+   font-size: 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 0px;
+}
+#arrow{
+    color: #007c89;
+}
+ #arrow:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s;
+      
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+      
+
+
+
+
+
+
+
+
+.pri>a{
+    font-weight: 700;
     color: black;
     text-decoration: none;
     font-weight: 60px;
@@ -196,7 +275,12 @@ body{
     font-size: 50px;
     font-style: 500; 
     line-height:52px;
+    margin-top: 80px;
+
     
+}
+#tag2_head p{
+    margin-top: 80px;
 }
 
  
