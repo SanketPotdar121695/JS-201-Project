@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Marketing, Automation & Email Platform | Mailchimp</title>
+    <link rel="stylesheet" href="/Styles/index.css">
+    <link rel="icon" href="https://i.postimg.cc/LsWsgPRQ/mailchimp-sq.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/1dc3fdd5e0.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+       
 </head>
 <body>
 
@@ -18,18 +20,15 @@
 
     <div id="main">
         <div id="nav">
-
             <div id="option">
-                    <p  class="otp">Products</p>
-                    <p class="otp" >Resources</p>
-                    <p class="otp" >Inspiration</p>
-                   <p class="pri"><a href="">Pricing</a></p> 
-                </div>
-                
-         
-
+                <a href="">Products</a>
+                <a href="">Resources</a>
+                <a href="">Inspiration</a>
+                <a href="/marketing.html">Pricing</a>
+            </div>
+            
         <div id="logo">
-            <img src="logo-removebg-preview.png" alt="logo"/>
+            <a href="/index.html"><img src="/Media/logo-removebg-preview.png" alt="logo"/></a>
         </div>
 
         <div id="right_option">
@@ -46,48 +45,26 @@
                  <div id="srch">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </div> 
-                  <button type="button" id="login">Log In </button>
-                  <button type="button" id="Signup1">Sign Up Free </button>
+                  <a href="/login.html"><button type="button" id="login">Log In </button></a>
+                  <a href="/signup.html"><button type="button" id="Signup1">Sign Up Free </button></a>
             </div>
                
         </div>
-    </div>
-    <div id="slider">
-        <div id="menu_products">
-            <ul>WE'LL HELP YOU —
-               <li>Get Your Business Online</li>
-               <li>Market Your Business</li>
-            </ul>
-            <hr>
-            <ul>PLATFORM FEATURES —
-                <li>Audience Management <i class="fa-solid fa-chevron-right"></i></li>
-                <li>Creative Tools <i class="fa-solid fa-chevron-right"></i></li>
-                <li>Marketing Automation <i class="fa-solid fa-chevron-right"></i></li>
-                <li>Insights &  analytics <i class="fa-solid fa-chevron-right"></i></li>
-                
-            </ul>
-            <hr>
-            <ul>NOT SURE WHERE TO START? —
-                <li>What's Right for me? <i class="fa-solid fa-chevron-right"></i></li>
-              
-            </ul>
-            <hr>
-            <ul>
-                <li>Talk to Sales: +1 (800) 315-5939</li>
-                
-            </ul>
-            <hr>
-            <ul>Product Updates
-                <li>Get the latest on new features, product improvements, and other announcements.</li>
-                
-                <li id="arrow">see whats-new <i class="fa-solid fa-arrow-right-long"></i> </li>
-            </ul>  
+       
         </div>
-    </div>
 
 
         
-</div>
+    </div>
+    <dialog id="slidebar">
+        <div id="mini-nav">
+            <a href="">Products</a>
+            <a href="">Resources</a>
+            <a href="">Inspiration</a>
+            <a href="">Pricing</a>
+        </div>
+        <div id="content"></div>
+    </dialog>
 
 <! -- scorl-1 -->
 <div id="container">
@@ -95,7 +72,7 @@
         <div  id="box1_0">
             <h1 id="berdo_head">Grow your audience<br> and your revenue</h1>
             <p>With Mailchimp, you get the tools you need to sell your products, reach new customers,and take your business to the next level.</p>
-            <button type="button" id="Signup2">Sign Up</button>
+            <a href="signup.html"><button type="button" id="Signup2">Sign Up</button></a>
         </div>
         <div id="box2_0">
             <img id="beardo_guy" src="https://eep.io/images/yzco4xsimv0y/5EDYfjhY65uLjRNqcJQOKN/a7432a264639c40e2c00c6ffb593d828/Automations_-_Hero_Image_-_060622.png?w=1520&fm=webp&q=70" alt=" 1stimage"/>
@@ -115,7 +92,7 @@
          <div>
             <h2>Sell more with email<br> automations</h2>
             <p>Generate more orders with our prebuilt automations:<br> remind abandoned cart shoppers, reengage lost<br> customers, or cross-sell your products. Marketers have<br> seen, on average, 4x more orders with our Customer<br> Journey Builder than with bulk emails.</p>
-            <button type="button" id="login1">see more </button>
+            <a href="https://mailchimp.com/automations/"><button class="common-style" type="button" id="login1">Sell more </button></a>
           </div>
 
          <div class="picart_head">
@@ -124,7 +101,7 @@
          <div>
             <h2>Win repeat business with<br> predictive segmentation</h2>
             <p>Find and target your most valuable customers to help get<br> them to buy again. Marketers have seen, on average, a<br> 76% increase in revenue when using our Customer<br> Lifetime Value and Likelihood to Purchase segments<br> compared to when they didn’t.</p>
-            <button type="button" id="login1">win repeat business </button>
+            <a href="/features.html"><button class="common-style" type="button" id="login1">Win repeat business </button></a>
           </div>
 
           <div class="picart_head">
@@ -133,7 +110,7 @@
          <div>
             <h2>Engage more customers with<br> stand-out emails</h2>
             <p>Improve your marketing results with suggestions based<br>on what we know works best. We’ll help you create click-<br>worthy content with our insights and drag-and-drop<br> design tools.</p>
-            <button type="button" id="login1">Engage more customers </button>
+            <a href="https://mailchimp.com/features/email/"><button class="common-style" type="button" id="login1">Engage more customers </button></a>
           </div>
    </div>
 
@@ -208,7 +185,7 @@
     <div id="box5">
           <div id="tag2" >
              <h2 id="tag2_head">Do it all with Mailchimp</h2>
-            <p>Bring your audience data, marketing channels, and insights together so you can work<br> on reaching your goals faster—all from a single platform.
+            <p>Bring your audience data, marketing channels, and insights together so you can work on reaching your goals faster—all from a single platform.
 
             </p>
           </div>
@@ -220,12 +197,12 @@
            <div>
               <h2>Market your business</h2>
               <p>Send the right messages on all the right <br>channels. Build emails, social ads, landing pages,<br> postcards, and more from one place.</p>
-              <button type="button" id="login1">see more </button>
+              <button class="common-style" type="button" id="login1">See more </button>
             </div>
             <div>
                 <h2>Get your business online</h2>
                 <p>Build a beautiful website with a custom domain,<br> launch an online store, and allow customers to<br> book appointments directly from your website.</p>
-                <button type="button" id="login1">win repeat business </button>
+                <a href="/features.html"><button class="common-style" type="button" id="login1">Win repeat business </button></a>
             </div>
             <div>
                 <img class="pic_art_img" src="https://eep.io/images/yzco4xsimv0y/6nQ4AQKdhqdEtbyt0ATvQI/83fa92b48a2a8881a8736e86f4c4e5fd/mtsb_get_your_business_online_floats__2_.png?w=760&fm=webp&q=80"/>
@@ -236,7 +213,7 @@
             <div>
                 <h2>Automate your marketing</h2>
                 <p>Add a personal touch without the personal effort<br> through automated messages that reach your<br> customers at exactly the right moments.</p>
-                <button type="button" id="login1">Engage more customers </button>
+                <a href="https://mailchimp.com/features/email/"><button class="common-style" type="button" id="login1">Engage more customers </button></a>
             </div>
      </div>
      
@@ -280,7 +257,7 @@
         <div >
             <h2>Let's do this</h2>
             <p>Every big idea starts with a small step forward.</p>
-            <button type="button" id="Signup2">Pick A Plan</button>
+            <a href="/marketing.html"><button type="button" id="Signup2">Pick A Plan</button></a>
         </div>
     </div>
     
@@ -451,4 +428,4 @@
     
 </body>
 </html>
-<script src="index.js"></script>
+<script type="module" src="/Scripts/index.js"></script>

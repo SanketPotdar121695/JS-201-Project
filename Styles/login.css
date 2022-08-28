@@ -42,6 +42,9 @@ h1 + p a:hover {
     margin-left: 1.8vw;
     margin-top: 25px;
 }
+#container > a {
+    border: 0;
+}
 form {
     display: flex;
     flex-grow: 1;

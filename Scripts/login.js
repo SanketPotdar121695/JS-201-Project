@@ -57,7 +57,7 @@ const logIn = (event) => {
     
     if (isMatch === true){
         alert("Login Successful");
-        window.location.reload();
+        window.location.href = "/index.html";
     }
     else {
         alert("Please enter correct credentials");
