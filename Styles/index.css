@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Corben', cursive;
+    overflow-x: hidden;
     
 }
 #nav{
@@ -12,15 +13,14 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    width: 96.9%;
+    width: 100%;
     margin: auto;
+    transition: 0.4s ease;
+   
     background-color: #ffe01b;
     padding: 0px 20px;
     position: fixed;
     top: 0px;
-}
-#cont a{
-    color: black;
 }
 #main{
     margin-top: 0px ;
@@ -30,87 +30,18 @@ body{
     gap: 20px;
     
 }
-#nav:hover{
-    background-color: #fff;
-    
-}
-
-.otp{
-    cursor: pointer;
-    font-weight: 700;
-    transition: 0.5s ease-in;
-}
-.pri>a:hover{
-    color:purple;
-    text-decoration: underline;
-
-}
-.otp:hover{
-    color:purple;
-    text-decoration: underline;
-
-}
-#slider{  
-    display:none ;
-    border: none;  
-    width: 30%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-     text-align: left;
-     overflow-y: scroll;
-     padding: 70px;
-    margin-top: 4rem;
-    height: 700px;
-    background-color: rgb(252, 252, 252);
-}
-#menu_products ul {
-    /*text-decoration: none;*/
-    padding-top: 100px;
-    list-style-type: none;
-}
-#menu_products ul li {
-   width: 100%;
-   font-size: 25px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 30px 0px;
-}
-#arrow{
-    color: #007c89;
-}
- #arrow:hover {
-        /* Start the shake animation and make the animation last for 0.5 seconds */
-        animation: shake 0.5s;
-      
-        /* When the animation is finished, start again */
-        animation-iteration-count: infinite;
-      }
-      
-      @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        10% { transform: translate(-1px, -2px) rotate(-1deg); }
-        20% { transform: translate(-3px, 0px) rotate(1deg); }
-        30% { transform: translate(3px, 2px) rotate(0deg); }
-        80% { transform: translate(-1px, -1px) rotate(1deg); }
-        90% { transform: translate(1px, 2px) rotate(0deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
-      }
-      
-
-
-
-
-
-
-
-
-.pri>a{
-    font-weight: 700;
+#option a,#footer_grid a{
     color: black;
     text-decoration: none;
     font-weight: 60px;
+}
+#option > a:hover {
+    color: #007c89;
+    border-bottom: 1px solid;
+}
+#cont:hover a {
+    color: #007c89;
+    text-decoration: underline;
 }
 #logo{
     width: 200px;
@@ -122,11 +53,16 @@ body{
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-right: 50px;
 }
 #cont{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+#cont > a {
+    color: black;
+    text-decoration: none;
 }
 #worldmap{
     display: flex;
@@ -161,21 +97,17 @@ body{
 #Signup1:hover{
     background-color: #0c5a63;
 }
-#container{
-    
-}
 
 #box1{
     padding-top:60px ;
     background-color: #ffe01b;
    display: flex;
-    width: 85%;
+    width: 100%;
     align-items: center;
-    /* justify-content: center; */
     padding: 100px
 }
 #beardo_guy{
-    width: 100%;
+    width: 80%;
 }
 #berdo_head{
     font-size: 45px;
@@ -275,12 +207,7 @@ body{
     font-size: 50px;
     font-style: 500; 
     line-height:52px;
-    margin-top: 80px;
-
     
-}
-#tag2_head p{
-    margin-top: 80px;
 }
 
  
@@ -378,4 +305,104 @@ body{
 #ppp p{
     text-align: justify;
     font-size: 10px;
+}
+#slidebar {
+    position: fixed;
+    top: 0;
+    width: 30%;
+    height: auto;
+    border: 0;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+}
+#content {
+    position: absolute;
+    top: 70px; bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+#mini-nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 29%;
+    gap: 20px;
+    height: 70px;
+    background-color: white;
+    z-index: 50;
+}
+#mini-nav > a {
+    text-decoration: none;
+    color: black;
+    margin-top: -5px;
+}
+#mini-nav > a:hover {
+    color: #007c89;
+    border-bottom: 1px solid;
+}
+#mini-nav > a:first-child {
+    outline: 0;
+    margin-left: 20px;
+}
+#slidebar::backdrop {
+    background: rgba(0, 0, 0, 1);
+    opacity: 0.5;
+}
+#content ul {
+    padding: 60px 0px;
+    list-style-type: none;
+    width: 80%;
+    margin-left: 30px;
+}
+#content ul li {
+   width: 100%;
+   font-size: 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0px;
+}
+#arrow{
+    color: #007c89;
+}
+#arrow:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.modal-logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+.modal-logo > img {
+    width: 100%;
+}
+.modal-logo > i {
+    color: black;
+}
+.modal-logo > h1 {
+    content: "\e09f";
+}
+.common-style:hover {
+    cursor: pointer;
+    color: #007c89;
 }

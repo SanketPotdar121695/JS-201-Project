@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="marketing.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/Styles/marketing.css">
+    <link rel="icon" href="https://i.postimg.cc/LsWsgPRQ/mailchimp-sq.jpg">
+    <title>Pricing:Mailchimp Marketing Plans | Mailchimp</title>
 </head>
 <body>
     
@@ -18,11 +19,11 @@
                 <a href="Products.html">Products</a>
                 <a href="Resources.html">Resources</a>
                 <a href="Inspirationhtml">Inspiration</a>
-                <a href="Pricing.html">Pricing</a>
+                <a href="/marketing.html">Pricing</a>
             </div>
             
         <div id="logo">
-            <img src="https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/300063249_4967307623369583_8858962477587924034_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=5AjsqAZWnT4AX8zFu5D&_nc_ht=scontent.fixr3-2.fna&oh=00_AT_uUhDhyHN58OWWQHIzv5-s72-eITAZE751u_V6rWHVyg&oe=630AD1A4" alt="logo"/>
+            <a href="/index.html"><img src="/Media/logo-removebg-preview.png" alt="logo"/></a>
         </div>
 
         <div id="right_option">
@@ -39,8 +40,8 @@
                  <div id="srch">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </div> 
-                  <button type="button" id="login">Log In </button>
-                  <button type="button" id="Signup1">Sign Up Free </button>
+                  <a href="/login.html"><button type="button" id="login">Log In </button></a>
+                  <a href="/signup.html"><button type="button" id="Signup1">Sign Up Free </button></a>
             </div>
                
         </div>
@@ -50,6 +51,15 @@
 
         
 </div>
+<dialog id="slidebar">
+    <div id="mini-nav">
+        <a href="">Products</a>
+        <a href="">Resources</a>
+        <a href="">Inspiration</a>
+        <a href="">Pricing</a>
+    </div>
+    <div id="content"></div>
+</dialog>
     
     <div id="navbar">
         <h1 class="websites"><a href="marketing.html">Marketing Platform</a></h1>
@@ -79,7 +89,7 @@
     <div id="container">
        <div>
         <h2>Premium</h2>
-        <p>Advanced features for pros who need more customization businesses that want to grow faster.</p>
+        <p>Advanced features for pros who need more customization businesses that want to grow.</p>
         <h6>Starts at</h6>
         <h6 class="start">₹</h6>
         <h5 id="money1">23,000</h5>
@@ -109,7 +119,7 @@
         <button class="buy" onclick="buyNow2()">Buy Now</button>
         <h6>*Overages apply if contact or email send limit is exceeded.</h6>
         <h4 class="head">Everything in Essentials, plus:</h4>
-        <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Customer Journey Builder + Branching Points</h4>
+        <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Customer Journey Builder + Branching</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Send Time Optimization</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Behavioral Targeting</h4>
         <h4 class="info"><i id="check" class="fa-solid fa-check";></i>Custom Templates</h4>
@@ -268,22 +278,4 @@
     </div>
 </body>
 </html>
-<script>
-  
-    function buyNow1(){
-       localStorage.setItem("buy",23000)
-       window.location.href="checkout.html"
-    }
-    function buyNow2(){
-       localStorage.setItem("buy",1500)
-       window.location.href="checkout.html"
-    }
-    function buyNow3(){
-       localStorage.setItem("buy",7700)
-       window.location.href="checkout.html"
-    }
-    function buyNow4(){
-       localStorage.setItem("buy",0)
-       window.location.href="checkout.html"
-    }
-</script>
+<script type="module" src="/Scripts/marketing.js"></script>
