@@ -33,23 +33,23 @@ ___
  ## Glipms of project
 __
 
-   - ###Homepage 
+   - ### Homepage 
 <img src="https://i.imgur.com/u9g9COw.png" alt="homepage" />
 
 
-   - ###Login 
+   - ### Login 
 <img src="https://i.imgur.com/ZwcYNjQ.jpg" alt="login" />
 
 
 
-   - ###Signup 
+   - ### Signup 
 <img src="https://i.imgur.com/Z08I4Nf.png" alt="signup" />
 
 
-   - ###Plan 
+   - ### Plan 
 <img src="https://i.imgur.com/Y4RGWrC.png" alt="plan" />
 
 
 
-   - ###Repeat Business 
+   - ### Repeat Business 
 <img src="https://i.imgur.com/4x8FBeK.png" alt="repeatBusiness" />
